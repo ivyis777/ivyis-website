@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy of IVYIS Technologies Private Limited.">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+        :root {
+            --ivyis-magenta: #b52b91;
+            --ivyis-purple: #7c287f;
+            --ivyis-deep-purple: #49174f;
+            --ivyis-lavender: #f8eff8;
+            --ivyis-soft-lavender: #fcf8fc;
+            --ivyis-white: #ffffff;
+            --ivyis-text: #271d2a;
+            --ivyis-muted: #6f6472;
+            --ivyis-border: #eaddeb;
+            --ivyis-shadow: 0 18px 45px rgba(73, 23, 79, 0.10);
+            --container-width: 960px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--ivyis-soft-lavender);
+            color: var(--ivyis-text);
+            font-family: "Manrope", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: var(--ivyis-purple);
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        a:hover {
+            color: var(--ivyis-magenta);
+        }
+
+        .container {
+            margin-inline: auto;
+            max-width: var(--container-width);
+            padding-inline: 24px;
+            width: 100%;
+        }
+
+        /* Header */
+        body > header {
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid var(--ivyis-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        body > header .container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            min-height: 82px;
+        }
+
+        .privacy-logo {
+            height: auto;
+            width: 170px;
+        }
+
+        body > header nav a {
+            background: linear-gradient(
+                135deg,
+                var(--ivyis-purple),
+                var(--ivyis-magenta)
+            );
+            border-radius: 999px;
+            color: var(--ivyis-white);
+            display: inline-flex;
+            font-size: 0.9rem;
+            font-weight: 700;
+            padding: 10px 20px;
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+        }
+
+        body > header nav a:hover {
+            box-shadow: 0 12px 26px rgba(181, 43, 145, 0.26);
+            color: var(--ivyis-white);
+            transform: translateY(-2px);
+        }
+
+        /* Main privacy policy */
+        main {
+            padding: 70px 0 90px;
+        }
+
+        .privacy-policy .container {
+            background: var(--ivyis-white);
+            border: 1px solid var(--ivyis-border);
+            border-radius: 24px;
+            box-shadow: var(--ivyis-shadow);
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .policy-header {
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(214, 74, 169, 0.20),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    var(--ivyis-deep-purple),
+                    var(--ivyis-purple)
+                );
+            padding: 68px 64px;
+        }
+
+        .policy-header > p:first-child {
+            color: #f3a8dc;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .policy-header h1 {
+            color: var(--ivyis-white);
+            font-size: clamp(2.5rem, 6vw, 4.3rem);
+            font-weight: 800;
+            letter-spacing: -0.045em;
+            line-height: 1.1;
+            margin-bottom: 18px;
+        }
+
+        .policy-header > p:last-child {
+            color: rgba(255, 255, 255, 0.75);
+            margin: 0;
+        }
+
+        .policy-header strong {
+            color: var(--ivyis-white);
+        }
+
+        .privacy-policy section {
+            margin-inline: 64px;
+            padding-block: 36px;
+        }
+
+        .privacy-policy section + section {
+            border-top: 1px solid var(--ivyis-border);
+        }
+
+        .privacy-policy h2 {
+            color: var(--ivyis-deep-purple);
+            font-size: 1.45rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 17px;
+        }
+
+        .privacy-policy p {
+            color: var(--ivyis-muted);
+            margin-bottom: 16px;
+        }
+
+        .privacy-policy p:last-child {
+            margin-bottom: 0;
+        }
+
+        .privacy-policy ul {
+            display: grid;
+            gap: 10px;
+            list-style: none;
+            margin: 18px 0 22px;
+            padding: 0;
+        }
+
+        .privacy-policy li {
+            color: #574d5a;
+            padding-left: 29px;
+            position: relative;
+        }
+
+        .privacy-policy li::before {
+            align-items: center;
+            background: var(--ivyis-lavender);
+            border-radius: 50%;
+            color: var(--ivyis-magenta);
+            content: "✓";
+            display: flex;
+            font-size: 0.72rem;
+            font-weight: 800;
+            height: 19px;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            top: 5px;
+            width: 19px;
+        }
+
+        .privacy-policy strong {
+            color: var(--ivyis-deep-purple);
+        }
+
+        .privacy-policy a {
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: rgba(181, 43, 145, 0.35);
+            text-underline-offset: 3px;
+        }
+
+        address {
+            background: var(--ivyis-lavender);
+            border-left: 4px solid var(--ivyis-magenta);
+            border-radius: 0 14px 14px 0;
+            color: var(--ivyis-muted);
+            font-style: normal;
+            line-height: 1.9;
+            margin-top: 20px;
+            padding: 22px 25px;
+        }
+
+        /* Footer */
+        body > footer {
+            background: #251228;
+            color: var(--ivyis-white);
+            padding: 48px 0 34px;
+        }
+
+        body > footer .container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            background: var(--ivyis-white);
+            border-radius: 12px;
+            height: auto;
+            padding: 4px;
+            width: 170px;
+        }
+
+        body > footer p {
+            color: rgba(255, 255, 255, 0.62);
+            font-size: 0.85rem;
+        }
+
+        body > footer nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            justify-content: center;
+        }
+
+        body > footer nav a {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.88rem;
+        }
+
+        body > footer nav a:hover,
+        body > footer nav a[aria-current="page"] {
+            color: #f3a8dc;
+        }
+
+        /* Tablet and mobile */
+        @media (max-width: 700px) {
+            .container {
+                padding-inline: 18px;
+            }
+
+            body > header .container {
+                min-height: 72px;
+            }
+
+            .privacy-logo {
+                width: 135px;
+            }
+
+            body > header nav a {
+                font-size: 0.78rem;
+                padding: 8px 14px;
+            }
+
+            main {
+                padding: 32px 0 55px;
+            }
+
+            .privacy-policy .container {
+                border-radius: 18px;
+            }
+
+            .policy-header {
+                padding: 46px 25px;
+            }
+
+            .privacy-policy section {
+                margin-inline: 24px;
+                padding-block: 29px;
+            }
+
+            .privacy-policy h2 {
+                font-size: 1.25rem;
+            }
+
+            .footer-logo {
+                width: 145px;
+            }
+
+            body > footer nav {
+                flex-direction: column;
+                gap: 9px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .privacy-logo {
+                width: 115px;
+            }
+
+            body > header nav a {
+                padding: 7px 11px;
+            }
+
+            .privacy-policy section {
+                margin-inline: 19px;
+            }
+        }
+    </style>
+    <title>Privacy Policy | IVYIS Technologies Private Limited</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" aria-label="Go to IVYIS homepage">
+                <img
+                    src="images/ivyis.jpg"
+                    alt="IVYIS Technologies Private Limited logo"
+                    class="privacy-logo"
+                >
+            </a>
+
+            <nav aria-label="Privacy page navigation">
+                <a href="index.html">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="privacy-policy">
+            <div class="container">
+                <header class="policy-header">
+                    <p>Legal</p>
+                    <h1>Privacy Policy</h1>
+                    <p><strong>Effective date:</strong> 7 September 2026</p>
+                </header>
+
+                <section>
+                    <h2>Introduction</h2>
+                    <p>
+                        IVYIS Technologies Private Limited (“IVYIS”, “we”, “our”, or “us”)
+                        respects your privacy and is committed to handling your personal
+                        information responsibly.
+                    </p>
+
+                    <p>
+                        This Privacy Policy explains what information we collect through
+                        the IVYIS website, why we collect it, how it may be used, and the
+                        choices available to you.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>1. Information We Collect</h2>
+
+                    <p>
+                        We collect personal information only when you voluntarily provide
+                        it through our contact or enquiry form.
+                    </p>
+
+                    <p>This information may include:</p>
+
+                    <ul>
+                        <li>Your name</li>
+                        <li>Your email address</li>
+                        <li>Your phone number</li>
+                        <li>The product or service you are interested in</li>
+                        <li>The message or enquiry you submit</li>
+                        <li>
+                            Any other information you voluntarily include in your
+                            communication
+                        </li>
+                    </ul>
+
+                    <p>
+                        Please avoid submitting sensitive personal information unless it
+                        is necessary for your enquiry.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>2. How We Use Your Information</h2>
+
+                    <p>We may use the information you provide to:</p>
+
+                    <ul>
+                        <li>Respond to your questions or enquiries</li>
+                        <li>
+                            Contact you about the product or service you selected
+                        </li>
+                        <li>
+                            Provide information about School ERP, digital marketing,
+                            Pawdli, Derma, or technology partnerships
+                        </li>
+                        <li>
+                            Arrange demonstrations, consultations, or follow-up
+                            discussions
+                        </li>
+                        <li>Maintain records of business communications</li>
+                        <li>Improve our services and customer support</li>
+                        <li>Comply with applicable legal obligations</li>
+                        <li>
+                            Protect our website, business, and users from misuse or
+                            unlawful activity
+                        </li>
+                    </ul>
+
+                    <p>
+                        We will not use information submitted through an enquiry for
+                        unrelated purposes without informing you or obtaining your consent
+                        where required.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>3. Analytics, Advertising and Tracking</h2>
+
+                    <p>The IVYIS website does not currently use:</p>
+
+                    <ul>
+                        <li>Google Analytics</li>
+                        <li>Meta Pixel</li>
+                        <li>Behavioural advertising trackers</li>
+                        <li>Remarketing tools</li>
+                        <li>Third-party analytics services</li>
+                    </ul>
+
+                    <p>
+                        We do not currently track visitors for advertising or profiling
+                        purposes.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>4. Cookies</h2>
+
+                    <p>
+                        The IVYIS website does not intentionally place analytics or
+                        advertising cookies on your device.
+                    </p>
+
+                    <p>
+                        Our website-hosting provider or external services linked from the
+                        website may process limited technical information or use essential
+                        technologies required to deliver their services. Their processing
+                        is governed by their respective privacy policies.
+                    </p>
+
+                    <p>
+                        If we introduce analytics, advertising cookies, or similar tracking
+                        technologies in the future, we will update this Privacy Policy and
+                        provide any notice or consent mechanism required by applicable law.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>5. Website Hosting and Technical Information</h2>
+
+                    <p>
+                        Our website may be hosted using a third-party hosting provider.
+                        The hosting provider may automatically process limited technical
+                        information required to operate, secure, and deliver the website.
+                    </p>
+
+                    <p>This technical information may include:</p>
+
+                    <ul>
+                        <li>Your IP address</li>
+                        <li>Your browser and device type</li>
+                        <li>The date and time of access</li>
+                        <li>The pages requested</li>
+                        <li>Basic diagnostic or security logs</li>
+                    </ul>
+
+                    <p>
+                        IVYIS does not use this technical information to create advertising
+                        profiles.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>6. How We Share Information</h2>
+
+                    <p>
+                        We do not sell, rent, or trade your personal information.
+                    </p>
+
+                    <p>
+                        We may share information only when reasonably necessary with:
+                    </p>
+
+                    <ul>
+                        <li>
+                            Employees or authorised team members responsible for
+                            responding to your enquiry
+                        </li>
+                        <li>
+                            Service providers that support website hosting, email,
+                            communications, or business operations
+                        </li>
+                        <li>Professional advisers where necessary</li>
+                        <li>
+                            Government authorities, courts, regulators, or law-enforcement
+                            agencies when required by law
+                        </li>
+                        <li>
+                            A successor organisation in connection with a merger,
+                            acquisition, restructuring, or transfer of business assets
+                        </li>
+                    </ul>
+
+                    <p>
+                        Service providers are expected to process information only for the
+                        relevant service and subject to appropriate confidentiality and
+                        security requirements.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>7. Data Retention</h2>
+
+                    <p>
+                        We retain personal information only for as long as reasonably
+                        necessary to:
+                    </p>
+
+                    <ul>
+                        <li>Respond to and manage your enquiry</li>
+                        <li>Continue a requested business discussion</li>
+                        <li>Maintain necessary business records</li>
+                        <li>Resolve disputes</li>
+                        <li>Enforce agreements</li>
+                        <li>
+                            Meet applicable legal, regulatory, accounting, or reporting
+                            requirements
+                        </li>
+                    </ul>
+
+                    <p>
+                        When personal information is no longer required, we will take
+                        reasonable steps to delete or securely dispose of it.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>8. Data Security</h2>
+
+                    <p>
+                        We use reasonable administrative and technical measures to protect
+                        personal information from unauthorised access, loss, misuse,
+                        alteration, or disclosure.
+                    </p>
+
+                    <p>
+                        However, no method of electronic transmission or storage is
+                        completely secure. Therefore, we cannot guarantee absolute
+                        security.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>9. Your Rights and Choices</h2>
+
+                    <p>Subject to applicable law, you may contact us to:</p>
+
+                    <ul>
+                        <li>
+                            Ask what personal information we hold about you
+                        </li>
+                        <li>
+                            Request correction of inaccurate or incomplete information
+                        </li>
+                        <li>Request deletion of your personal information</li>
+                        <li>
+                            Withdraw consent where processing is based on consent
+                        </li>
+                        <li>
+                            Ask us to stop using your information for a particular purpose
+                        </li>
+                        <li>
+                            Raise a concern or complaint about how your information is
+                            handled
+                        </li>
+                    </ul>
+
+                    <p>
+                        Withdrawing consent will not affect processing that was lawful
+                        before the withdrawal. We may retain certain information when
+                        required by law or when necessary to establish, exercise, or defend
+                        legal claims.
+                    </p>
+
+                    <p>
+                        To submit a privacy request, email us at
+                        <a href="mailto:contact@ivyisark.com">contact@ivyisark.com</a>.
+                        We may need to verify your identity before completing the request.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>10. Children’s Privacy</h2>
+
+                    <p>
+                        This corporate website is not intended to collect personal
+                        information directly from children under 18 years of age.
+                    </p>
+
+                    <p>
+                        Children should not submit personal information through the contact
+                        form without the involvement and consent of a parent or legal
+                        guardian.
+                    </p>
+
+                    <p>
+                        If we discover that personal information was submitted by a child
+                        without appropriate parental involvement, we will take reasonable
+                        steps to delete it.
+                    </p>
+
+                    <p>
+                        This section applies to the IVYIS corporate website. Separate
+                        platforms or services offered by IVYIS may have their own privacy
+                        policies and consent requirements.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>11. Third-Party Websites</h2>
+
+                    <p>
+                        Our website may contain links to external websites, applications,
+                        or social-media platforms.
+                    </p>
+
+                    <p>
+                        We do not control the privacy practices, content, or security of
+                        third-party services. We recommend reviewing their privacy policies
+                        before providing personal information.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>12. International Processing</h2>
+
+                    <p>
+                        Some website-hosting, email, or technology service providers may
+                        process information on servers located outside India.
+                    </p>
+
+                    <p>
+                        Where such processing occurs, we will take reasonable steps to use
+                        service providers that maintain appropriate data-protection and
+                        security safeguards, subject to applicable law.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>13. Changes to This Privacy Policy</h2>
+
+                    <p>
+                        We may update this Privacy Policy when our website, services, or
+                        legal obligations change.
+                    </p>
+
+                    <p>
+                        The updated version will be published on this page with a revised
+                        effective date. We encourage you to review this page periodically.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>14. Contact Us</h2>
+
+                    <p>
+                        For privacy questions, requests, concerns, or complaints, contact:
+                    </p>
+
+                    <address>
+                        <strong>IVYIS Technologies Private Limited</strong><br>
+                        Bangalore, Karnataka, India<br>
+                        Email:
+                        <a href="mailto:contact@ivyisark.com">
+                            contact@ivyisark.com
+                        </a>
+                    </address>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img
+                src="images/ivyis.jpg"
+                alt="IVYIS Technologies Private Limited logo"
+                class="footer-logo"
+            >
+
+            <p>
+                &copy; 2026 IVYIS Technologies Private Limited.
+                All rights reserved.
+            </p>
+
+            <nav aria-label="Legal navigation">
+                <a href="index.html">Home</a>
+                <a href="privacy.html" aria-current="page">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

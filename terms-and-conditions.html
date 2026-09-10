@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="description" content="Terms and Conditions of IVYIS Technologies Private Limited.">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+        :root {
+            --ivyis-magenta: #b52b91;
+            --ivyis-purple: #7c287f;
+            --ivyis-deep-purple: #49174f;
+            --ivyis-pink: #d64aa9;
+            --ivyis-lavender: #f8eff8;
+            --ivyis-soft-lavender: #fcf8fc;
+            --ivyis-white: #ffffff;
+            --ivyis-text: #271d2a;
+            --ivyis-muted: #6f6472;
+            --ivyis-border: #eaddeb;
+            --ivyis-shadow: 0 18px 45px rgba(73, 23, 79, 0.10);
+            --container-width: 960px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--ivyis-soft-lavender);
+            color: var(--ivyis-text);
+            font-family: "Manrope", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: var(--ivyis-purple);
+            text-decoration: none;
+            transition: color 0.25s ease;
+        }
+
+        a:hover {
+            color: var(--ivyis-magenta);
+        }
+
+        .container {
+            margin-inline: auto;
+            max-width: var(--container-width);
+            padding-inline: 24px;
+            width: 100%;
+        }
+
+        /* Header */
+        body > header {
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid var(--ivyis-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        body > header .container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            min-height: 82px;
+        }
+
+        .privacy-logo {
+            height: auto;
+            width: 170px;
+        }
+
+        body > header nav a {
+            align-items: center;
+            background: linear-gradient(
+                135deg,
+                var(--ivyis-purple),
+                var(--ivyis-magenta)
+            );
+            border-radius: 999px;
+            color: var(--ivyis-white);
+            display: inline-flex;
+            font-size: 0.9rem;
+            font-weight: 700;
+            justify-content: center;
+            min-height: 44px;
+            padding: 10px 20px;
+            transition:
+                box-shadow 0.25s ease,
+                transform 0.25s ease;
+        }
+
+        body > header nav a:hover {
+            box-shadow: 0 12px 26px rgba(181, 43, 145, 0.26);
+            color: var(--ivyis-white);
+            transform: translateY(-2px);
+        }
+
+        /* Main page */
+        main {
+            padding: 70px 0 90px;
+        }
+
+        .privacy-policy .container {
+            background: var(--ivyis-white);
+            border: 1px solid var(--ivyis-border);
+            border-radius: 24px;
+            box-shadow: var(--ivyis-shadow);
+            overflow: hidden;
+            padding: 0;
+        }
+
+        /* Page heading */
+        .policy-header {
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(214, 74, 169, 0.22),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    var(--ivyis-deep-purple),
+                    var(--ivyis-purple)
+                );
+            padding: 68px 64px;
+        }
+
+        .policy-header > p:first-child {
+            color: #f3a8dc;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .policy-header h1 {
+            color: var(--ivyis-white);
+            font-size: clamp(2.4rem, 6vw, 4.1rem);
+            font-weight: 800;
+            letter-spacing: -0.045em;
+            line-height: 1.1;
+            margin-bottom: 18px;
+        }
+
+        .policy-header > p:last-child {
+            color: rgba(255, 255, 255, 0.76);
+            margin: 0;
+        }
+
+        .policy-header strong {
+            color: var(--ivyis-white);
+        }
+
+        /* Terms sections */
+        .privacy-policy section {
+            margin-inline: 64px;
+            padding-block: 36px;
+        }
+
+        .privacy-policy section + section {
+            border-top: 1px solid var(--ivyis-border);
+        }
+
+        .privacy-policy h2 {
+            color: var(--ivyis-deep-purple);
+            font-size: 1.45rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 17px;
+        }
+
+        .privacy-policy p {
+            color: var(--ivyis-muted);
+            margin-bottom: 16px;
+        }
+
+        .privacy-policy p:last-child {
+            margin-bottom: 0;
+        }
+
+        .privacy-policy ul {
+            display: grid;
+            gap: 10px;
+            list-style: none;
+            margin: 18px 0 22px;
+            padding: 0;
+        }
+
+        .privacy-policy li {
+            color: #574d5a;
+            padding-left: 29px;
+            position: relative;
+        }
+
+        .privacy-policy li::before {
+            align-items: center;
+            background: var(--ivyis-lavender);
+            border-radius: 50%;
+            color: var(--ivyis-magenta);
+            content: "✓";
+            display: flex;
+            font-size: 0.72rem;
+            font-weight: 800;
+            height: 19px;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            top: 5px;
+            width: 19px;
+        }
+
+        .privacy-policy strong {
+            color: var(--ivyis-deep-purple);
+        }
+
+        .privacy-policy a {
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: rgba(181, 43, 145, 0.35);
+            text-underline-offset: 3px;
+        }
+
+        .privacy-policy a:hover {
+            text-decoration-color: var(--ivyis-magenta);
+        }
+
+        /* Contact information */
+        address {
+            background: var(--ivyis-lavender);
+            border-left: 4px solid var(--ivyis-magenta);
+            border-radius: 0 14px 14px 0;
+            color: var(--ivyis-muted);
+            font-style: normal;
+            line-height: 1.9;
+            margin-top: 20px;
+            padding: 22px 25px;
+        }
+
+        /* Footer */
+        body > footer {
+            background: #251228;
+            color: var(--ivyis-white);
+            padding: 48px 0 34px;
+        }
+
+        body > footer .container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            background: var(--ivyis-white);
+            border-radius: 12px;
+            height: auto;
+            padding: 4px;
+            width: 170px;
+        }
+
+        body > footer p {
+            color: rgba(255, 255, 255, 0.62);
+            font-size: 0.85rem;
+        }
+
+        body > footer nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            justify-content: center;
+        }
+
+        body > footer nav a {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.88rem;
+        }
+
+        body > footer nav a:hover,
+        body > footer nav a[aria-current="page"] {
+            color: #f3a8dc;
+        }
+
+        /* Tablet and mobile */
+        @media (max-width: 700px) {
+            .container {
+                padding-inline: 18px;
+            }
+
+            body > header .container {
+                min-height: 72px;
+            }
+
+            .privacy-logo {
+                width: 135px;
+            }
+
+            body > header nav a {
+                font-size: 0.78rem;
+                min-height: 40px;
+                padding: 8px 14px;
+            }
+
+            main {
+                padding: 32px 0 55px;
+            }
+
+            .privacy-policy .container {
+                border-radius: 18px;
+            }
+
+            .policy-header {
+                padding: 46px 25px;
+            }
+
+            .policy-header h1 {
+                font-size: clamp(2rem, 10vw, 3rem);
+            }
+
+            .privacy-policy section {
+                margin-inline: 24px;
+                padding-block: 29px;
+            }
+
+            .privacy-policy h2 {
+                font-size: 1.25rem;
+            }
+
+            .footer-logo {
+                width: 145px;
+            }
+
+            body > footer nav {
+                flex-direction: column;
+                gap: 9px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .privacy-logo {
+                width: 115px;
+            }
+
+            body > header nav a {
+                padding: 7px 11px;
+            }
+
+            .privacy-policy section {
+                margin-inline: 19px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                transition: none !important;
+            }
+        }
+    </style>
+
+    <title>
+        Terms and Conditions | IVYIS Technologies Private Limited
+    </title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" aria-label="Go to IVYIS homepage">
+                <img
+                    src="images/ivyis.jpg"
+                    alt="IVYIS Technologies Private Limited logo"
+                    class="privacy-logo"
+                >
+            </a>
+
+            <nav aria-label="Terms page navigation">
+                <a href="index.html">Back to Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="privacy-policy">
+            <div class="container">
+                <header class="policy-header">
+                    <p>Legal</p>
+                    <h1>Terms and Conditions</h1>
+                    <p>
+                        <strong>Effective date:</strong>
+                        7 September 2026
+                    </p>
+                </header>
+
+                <section>
+                    <h2>Introduction</h2>
+
+                    <p>
+                        These Terms and Conditions govern your access to and use
+                        of the IVYIS website operated by IVYIS Technologies
+                        Private Limited (“IVYIS”, “we”, “our”, or “us”).
+                    </p>
+
+                    <p>
+                        By accessing or using this website, you agree to comply
+                        with these Terms and Conditions. If you do not agree
+                        with these terms, please do not use the website.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>1. About IVYIS</h2>
+
+                    <p>
+                        IVYIS Technologies Private Limited provides and develops
+                        digital products and professional services across
+                        education, business growth, pet care, healthcare, and
+                        related technology areas.
+                    </p>
+
+                    <p>
+                        The website may provide information about products and
+                        services including:
+                    </p>
+
+                    <ul>
+                        <li>School ERP solutions</li>
+                        <li>Digital marketing services</li>
+                        <li>The Pawdli pet-care platform</li>
+                        <li>The upcoming Derma platform</li>
+                        <li>Technology partnerships and related services</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>2. Website Information</h2>
+
+                    <p>
+                        The information available on this website is provided
+                        for general informational and business-enquiry purposes.
+                    </p>
+
+                    <p>
+                        Product descriptions, features, availability, launch
+                        dates, prices, and service details may change without
+                        prior notice.
+                    </p>
+
+                    <p>
+                        Information displayed on the website does not constitute
+                        a binding commercial offer unless IVYIS expressly
+                        confirms it in a written agreement.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>3. Enquiries and Communications</h2>
+
+                    <p>
+                        You may use the contact form or the contact details
+                        provided on the website to ask questions, request a
+                        demonstration, discuss services, or explore a potential
+                        partnership.
+                    </p>
+
+                    <p>
+                        Submitting an enquiry does not create a contract,
+                        partnership, employment relationship, agency
+                        relationship, or obligation for IVYIS to provide a
+                        product or service.
+                    </p>
+
+                    <p>
+                        A commercial relationship will begin only when the
+                        relevant parties accept a separate proposal, order,
+                        agreement, or other written confirmation.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>4. Accuracy of Information Submitted by You</h2>
+
+                    <p>
+                        When submitting an enquiry or communicating with us, you
+                        agree to provide information that is accurate, current,
+                        and complete.
+                    </p>
+
+                    <p>
+                        You must not impersonate another person, provide
+                        misleading information, or submit contact details that
+                        you are not authorised to use.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>5. Acceptable Use</h2>
+
+                    <p>You agree not to use this website to:</p>
+
+                    <ul>
+                        <li>Violate any applicable law or regulation</li>
+
+                        <li>
+                            Submit false, fraudulent, misleading, abusive, or
+                            unlawful information
+                        </li>
+
+                        <li>
+                            Interfere with the operation, availability, or
+                            security of the website
+                        </li>
+
+                        <li>
+                            Attempt to gain unauthorised access to the website,
+                            its systems, servers, or connected networks
+                        </li>
+
+                        <li>
+                            Introduce viruses, malicious code, automated attacks,
+                            or other harmful technology
+                        </li>
+
+                        <li>
+                            Scrape, copy, or extract website content using
+                            automated methods without written permission
+                        </li>
+
+                        <li>
+                            Use the website to send spam, unsolicited
+                            advertisements, or harmful communications
+                        </li>
+
+                        <li>
+                            Infringe the intellectual-property, privacy, or
+                            other legal rights of IVYIS or another person
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>6. Intellectual Property</h2>
+
+                    <p>
+                        Unless otherwise stated, the website and its contents
+                        are owned by or licensed to IVYIS Technologies Private
+                        Limited.
+                    </p>
+
+                    <p>This includes:</p>
+
+                    <ul>
+                        <li>The IVYIS name, logo, and branding</li>
+                        <li>Website text and written content</li>
+                        <li>Graphics, illustrations, photographs, and videos</li>
+                        <li>Page layouts and visual designs</li>
+                        <li>Software, product designs, and platform features</li>
+                        <li>Reports, documents, and promotional materials</li>
+                    </ul>
+
+                    <p>
+                        You may view the website for personal or legitimate
+                        business purposes. You may not reproduce, modify,
+                        distribute, publish, sell, license, or commercially use
+                        its contents without prior written permission from
+                        IVYIS.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>7. Product and Service Agreements</h2>
+
+                    <p>
+                        Products and services offered by IVYIS may be governed
+                        by separate agreements, proposals, subscription terms,
+                        service-level agreements, payment terms, or platform-specific
+                        policies.
+                    </p>
+
+                    <p>
+                        If there is a conflict between these website Terms and
+                        Conditions and a separately signed agreement, the
+                        separately signed agreement will apply to the relevant
+                        product or service.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>8. Upcoming Products and Features</h2>
+
+                    <p>
+                        Some products, services, or features displayed on the
+                        website may be described as “Coming Soon”, under
+                        development, planned, or subject to future release.
+                    </p>
+
+                    <p>
+                        Such descriptions are provided for informational
+                        purposes and do not guarantee a specific release date,
+                        feature set, price, or availability.
+                    </p>
+
+                    <p>
+                        IVYIS may modify, delay, suspend, or discontinue an
+                        upcoming product or feature.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>9. Third-Party Links and Services</h2>
+
+                    <p>
+                        The website may contain links to third-party websites,
+                        applications, social-media platforms, or services.
+                    </p>
+
+                    <p>
+                        These links are provided for convenience. IVYIS does not
+                        control and is not responsible for the availability,
+                        content, security, products, services, or privacy
+                        practices of third-party websites.
+                    </p>
+
+                    <p>
+                        Your use of a third-party website or service is governed
+                        by that third party’s own terms and policies.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>10. Privacy</h2>
+
+                    <p>
+                        Personal information submitted through this website is
+                        handled according to our Privacy Policy.
+                    </p>
+
+                    <p>
+                        Please read our
+                        <a href="privacy.html">Privacy Policy</a>
+                        to understand what information we collect and how it may
+                        be used.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>11. Children and Minors</h2>
+
+                    <p>
+                        This corporate website is intended for adults and
+                        authorised representatives of organisations.
+                    </p>
+
+                    <p>
+                        A person under 18 years of age should not submit personal
+                        information or make a business enquiry without the
+                        involvement and consent of a parent or legal guardian.
+                    </p>
+
+                    <p>
+                        Separate IVYIS products that may involve children,
+                        students, parents, or educational institutions may be
+                        governed by additional platform-specific terms and
+                        policies.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>12. Website Availability</h2>
+
+                    <p>
+                        We aim to keep the website accessible and functioning
+                        properly. However, we do not guarantee that the website
+                        will always be available, uninterrupted, secure, or
+                        error-free.
+                    </p>
+
+                    <p>
+                        We may temporarily suspend, restrict, update, or
+                        discontinue any part of the website for maintenance,
+                        security, operational, or business reasons.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>13. Disclaimer of Warranties</h2>
+
+                    <p>
+                        The website and its content are provided on an “as is”
+                        and “as available” basis.
+                    </p>
+
+                    <p>
+                        To the maximum extent permitted by applicable law, IVYIS
+                        does not make warranties regarding the completeness,
+                        accuracy, reliability, availability, or suitability of
+                        the website content for any particular purpose.
+                    </p>
+
+                    <p>
+                        You are responsible for evaluating information before
+                        relying on it or making a business decision.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>14. Limitation of Liability</h2>
+
+                    <p>
+                        To the maximum extent permitted by applicable law,
+                        IVYIS Technologies Private Limited and its directors,
+                        employees, representatives, and service providers will
+                        not be liable for indirect, incidental, special,
+                        consequential, or punitive losses arising from your use
+                        of, or inability to use, this website.
+                    </p>
+
+                    <p>
+                        This includes losses arising from reliance on website
+                        content, website interruptions, third-party links,
+                        unauthorised access, technical problems, or harmful
+                        software transmitted through third-party systems.
+                    </p>
+
+                    <p>
+                        Nothing in these Terms and Conditions excludes or limits
+                        liability that cannot legally be excluded or limited
+                        under applicable law.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>15. Indemnity</h2>
+
+                    <p>
+                        To the extent permitted by applicable law, you agree to
+                        be responsible for losses, claims, or expenses arising
+                        from your unlawful use of the website, your violation of
+                        these Terms and Conditions, or your infringement of
+                        another person’s rights.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>16. Suspension or Restriction</h2>
+
+                    <p>
+                        We may restrict or block access to the website if we
+                        reasonably believe that a person is misusing the
+                        website, attempting to compromise its security, or
+                        violating these Terms and Conditions.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>17. Changes to These Terms</h2>
+
+                    <p>
+                        We may update these Terms and Conditions when our
+                        website, products, services, or legal obligations
+                        change.
+                    </p>
+
+                    <p>
+                        The updated version will be published on this page with
+                        a revised effective date. Your continued use of the
+                        website after an update constitutes acceptance of the
+                        revised terms.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>18. Governing Law and Jurisdiction</h2>
+
+                    <p>
+                        These Terms and Conditions are governed by the laws of
+                        India.
+                    </p>
+
+                    <p>
+                        Subject to applicable law, courts with competent
+                        jurisdiction in Bangalore, Karnataka, India will have
+                        jurisdiction over disputes relating to these Terms and
+                        Conditions or the use of this website.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>19. Severability</h2>
+
+                    <p>
+                        If any provision of these Terms and Conditions is found
+                        to be invalid or unenforceable, the remaining provisions
+                        will continue to apply.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>20. Contact Us</h2>
+
+                    <p>
+                        For questions about these Terms and Conditions, contact:
+                    </p>
+
+                    <address>
+                        <strong>
+                            IVYIS Technologies Private Limited
+                        </strong><br>
+
+                        Bangalore, Karnataka, India<br>
+
+                        Email:
+                        <a href="mailto:contact@ivyisark.com">
+                            contact@ivyisark.com
+                        </a>
+                    </address>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img
+                src="images/ivyis.jpg"
+                alt="IVYIS Technologies Private Limited logo"
+                class="footer-logo"
+            >
+
+            <p>
+                &copy; 2026 IVYIS Technologies Private Limited.
+                All rights reserved.
+            </p>
+
+            <nav aria-label="Legal navigation">
+                <a href="index.html">Home</a>
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a
+                    href="terms-and-conditions.html"
+                    aria-current="page"
+                >
+                    Terms and Conditions
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
