@@ -278,13 +278,27 @@
                     <p>Share a few details and the IVYIS team will get in touch with you.</p>
 
                     <div class="contact-details">
-                        <p><strong>Email:</strong> Add company email</p>
-                        <p><strong>Phone:</strong> Add company phone number</p>
-                        <p><strong>Location:</strong> Add office location</p>
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:contact@ivyisark.com">contact@ivyisark.com</a>
+                        </p>
+
+                        <p>
+                            <strong>WhatsApp:</strong>
+                            <a href="https://wa.me/917899789730" target="_blank" rel="noopener noreferrer">
+                                +91 78997 89730
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Ivyis Technologies, Opp. to Takshvi Health Care, Surabhi Layout,
+                            Bengaluru, Karnataka – 560064
+                        </p>
                     </div>
                 </div>
 
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -365,11 +379,39 @@
             <div class="container footer-bottom-container">
                 <p>&copy; 2026 IVYIS. All rights reserved.</p>
                 <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms and Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms and Conditions</a>
                 </div>
             </div>
         </div>
     </footer>
+<script>
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const interestSelect = document.getElementById("interest");
+        const interest =
+            interestSelect.options[interestSelect.selectedIndex].text;
+        const message = document.getElementById("message").value.trim();
+
+        const whatsappMessage =
+            "Hello IVYIS,%0A%0A" +
+            "Name: " + encodeURIComponent(name) + "%0A" +
+            "Email: " + encodeURIComponent(email) + "%0A" +
+            "Phone: " + encodeURIComponent(phone || "Not provided") + "%0A" +
+            "Interested in: " + encodeURIComponent(interest) + "%0A" +
+            "Message: " + encodeURIComponent(message || "No message provided");
+
+        const whatsappURL =
+            "https://wa.me/917899789730?text=" + whatsappMessage;
+
+        window.open(whatsappURL, "_blank");
+    });
+</script>
 </body>
 </html>
